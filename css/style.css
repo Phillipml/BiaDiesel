@@ -1,0 +1,778 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Oxygen', sans-serif;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+html, body{
+	height: 100%;
+}
+/*****DEFAULT STYLE***/
+.container{
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	padding: 0 2%;
+	margin: 0 auto;
+	}
+.clear{clear: both;}
+/************************/
+/******INDEX*******/
+header{
+	width: 100%;
+	height: 150px;
+	background-color: rgb(1,0,89);
+	border-bottom: 5px solid #196ce0;
+}
+.logo-header{
+	float: left;
+	margin-top: 40px;
+	width: 440px;
+	height: 75px;
+	cursor: pointer;
+	
+}
+.logo-header img{
+	width: 100%;
+	max-width: 440px;
+}
+
+nav.desktop{
+	float: right;
+	width: 450px;
+	margin-top: 60px;
+}
+
+
+nav.desktop ul li{
+	float: left;
+	list-style: none;
+}
+nav.desktop ul li a{
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 24px;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	transition: 0.2s;
+}
+nav.desktop ul li:not:first-child(1){
+	padding-left: 0;
+}
+
+nav.desktop ul li a:hover{
+	text-shadow: 2px 2px 4px white;
+}
+header .mobile-icon{
+	z-index: 9999;
+	position: fixed;
+	right: 3%;
+	top:2%;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/mobile_icon.png);
+	cursor: pointer;
+	display: none;
+}
+nav.mobile{
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	margin-top: 60px;
+	display: none;
+	border: 4px solid #0073ff ;
+}
+nav.mobile ul li{
+	text-align: center;
+	list-style: none;
+	background-color: #ccc;
+	border-bottom: 1px solid #0073ff;
+}
+nav.mobile ul li a{
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 24px;
+	color: #0073ff;
+	font-style: italic;
+	font-weight: bold;
+	transition: 0.2s;
+}
+nav.mobile ul li:not:first-child(1){
+	padding-left: 0;
+}
+section.bg-1{
+	width: 100%;
+	height: 600px;
+	background-color: #ccc;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/bg.png);
+	background-position: center;
+	
+}
+section.bg-1 .h2-wraper{
+	width: 40%;
+	height: 230px;
+	position: relative;
+	top: 10%;
+	background-color: rgb(1,0,89);
+	opacity: 0.8;
+}
+section.bg-1 h2{
+	text-align: center;
+	margin:0 auto;
+	padding-top: 15%;
+	max-width: 90%;
+	font-size: 22px;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes example {
+	0%{text-shadow: 0 0 0 white;}
+	50%{text-shadow: 2px 2px 4px rgb(7, 103, 237);}
+	100%{text-shadow: 0 0 0 white;}
+}
+section.dispor{
+	background-color: rgb(100,100,100);
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+section.dispor h2{
+	font-size: 45px;
+	margin-top: 15px;
+	color: white;
+	text-decoration: underline;
+	text-align: center;
+}
+section.dispor p{
+	padding-top: 15px;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+}
+section.main-mosaico{
+	width: 100%;
+	background-color:rgb(5, 2, 89);
+	border-bottom: 5px solid #196ce0;
+}
+section.main-mosaico .mosaico-wraper{
+display: flex;
+}
+section.main-mosaico .mosaico-wraper .img{
+	float: left;
+	width: 50%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+section.main-mosaico .text{
+	float: right;
+	width: 50%;
+	height: 200px;
+	color: white;
+	padding: 50px 20px;
+}
+section.main-mosaico .text h2{
+	margin-bottom: 20px;
+	text-decoration: underline;
+	font-style: italic;
+}
+.bia_form{
+	width: 1280;
+	height: auto;
+	background-color:rgb(5, 2, 89);
+	overflow: hidden;
+}
+.biadiesel_form{
+	border: 1px solid white;
+	margin: 25px auto;
+	width: 80%;
+	height: auto;
+
+}
+.biadiesel_form h2{
+	color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+}
+.biadiesel_form #input_form{
+	width: 30%;
+	min-width: 300px;
+	border: unset;
+	border-radius: 10px;
+	margin: 10px auto;
+	height: 40px;
+	display: block;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-style: normal;
+	
+}
+.biadiesel_form textarea{
+	display: block;
+	width: 30%;
+	min-width: 300px;
+	height: 250px;
+	padding: 5px;
+	margin: 0 auto;
+	margin-bottom:15px;
+	resize: none;
+	border: unset;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-style: normal;
+	
+}
+.biadiesel_form input:focus{
+	outline: none;
+	color: white;
+	border: 3px solid whitesmoke;
+	background-color: darkblue;
+}
+.biadiesel_form textarea:focus{
+	outline: none;
+	color: white;
+	border: 3px solid whitesmoke;
+	background-color: darkblue;
+}
+.submit{
+	text-align: center;
+}
+.biadiesel_form input[type="submit"]{
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	border: unset;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+.biadiesel_form input[type="submit"]:hover{
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: lightblue;
+	cursor: pointer;
+}
+.biadiesel_form input[type="submit"]:active{
+	outline: none;
+	color: white;
+	border: 3px solid whitesmoke;
+	background-color: darkblue;
+}
+section .contato{
+	width: 100%;
+	height: 250px;
+	border-bottom: 5px solid #196ce0;
+	background-color: black;
+}
+section.contato .contact-side-left{
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-right: 5px solid #196ce0;
+}
+section.contato .contact-side-left-wraper{
+	padding: 25px 2%;
+	height: 100%;
+	/*background-color: green;*/
+	text-align: center;
+}
+section.contato .contact-side-left-wraper h2{
+	margin-top:10px;
+	font-size: 30px;
+	font-weight: normal;
+	color:white;
+}
+section.contato .contact-side-left-wraper p{
+	margin-top: 12px;
+	font-size: 20px;
+	color: white;
+}
+section.contato .contact-side-right{
+	width: 50%;
+	height: 100%;
+	vertical-align: middle;
+	float: right;
+	overflow: hidden;	
+}
+section.contato .contact-side-right-wraper{
+	padding: 0 2%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+section.contato .contact-side-right-wraper h2{
+	
+	font-size: 30px;
+	font-weight: normal;
+	color:white;
+}
+section.contato .contact-side-right-wraper p{
+	padding-top: 10px;
+	font-size: 18px;
+	color: white;
+
+}
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(1,0,89);
+	overflow: hidden;
+}
+.copyright{
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 40px 2%;
+	
+
+}
+.copyright p{
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+	color: white;
+	
+}
+footer nav.desktop{
+	float: right;
+	width: 50%;
+	margin-top: 0;
+	padding-top: 2%;
+}
+footer nav ul li{
+	float: left;
+	padding-left: 5%;
+	list-style: none;
+}
+footer nav ul li a{
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 22px;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	transition: 0.2s;
+}
+/******MECÂNICA*******/
+section.sessao1-mecanica{
+	width: 100%;
+	background-color: rgb(20,20,20); 
+	color: white;
+}
+section.sessao1-mecanica .mecanica-text{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+section.sessao1-mecanica .mecanica-text h2{
+	font-size: 40px;
+	padding: 20px 2%;
+	color: white;
+	font-style: italic;
+	font-weight: bold;	
+	text-align: center;
+}
+section.sessao1-mecanica p{
+	
+	padding: 20px 2%;
+	font-size: 20px;
+}
+
+section.mecanica-galeria{
+	width: 100%;
+	height: 300px;
+	background: rgb(20,20,20);
+	
+}
+section.mecanica-galeria .mecanica-galeria-single{
+	width: 33.3%;
+	height: 100%;
+	padding: 15px 0;
+	text-align: center;
+	float: left;
+}
+.mecanica-galeria-single .mecanica-img{
+	margin: 0 auto;
+	padding: 15px 2%;
+	width: 90%;
+	height: 80%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.mecanica-galeria-single  h2{
+	padding: 10px 2%;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+/********ELETRICA*********/
+section.sessao1-eletrica{
+	width: 100%;
+	height: auto;
+	background-color: rgb(20,20,20); 
+	color: white;
+}
+section.sessao1-mecanica .eletrica-text{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+section.sessao1-eletrica h2{
+	font-size: 40px;
+	padding: 20px 2%;
+	color: white;
+	font-style: italic;
+	font-weight: bold;	
+	text-align: center;
+}
+section.sessao1-eletrica p{
+	padding: 20px 2%;
+	font-size: 20px;
+}
+.table-eletrica{
+	width: 50%;
+	margin: 0 auto;	
+}
+.table-eletrica tr{
+height: 50px;
+}
+.table-eletrica tr th{
+	display: block;
+	padding: 15px 2%;
+	width: 50%;
+	margin: 0 auto;
+}
+.table-eletrica tr img{
+	width: 40px;
+	display: inline-block;	
+}
+.table-eletrica tr span{  
+	position: relative;
+	bottom: 15px;
+}
+.sessao3-eletrica{
+	width: 100%;
+	height: 250px;
+	background-color: rgb(50,50,50);
+}
+.img-eletrica{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/caixa-fusiveis.jpg);
+	opacity: 0.5;
+	background-position: center;
+}
+/*******Pecas*******/
+section.sessao1-pecas{
+	width: 100%;
+	height: 600px;
+	background-color: rgb(20,20,20); 
+	color: white;
+}
+section.sessao1-pecas .pecas-text{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+section.sessao1-pecas .pecas-text h2{
+	font-size: 40px;
+	padding: 20px 2%;
+	color: white;
+	font-style: italic;
+	font-weight: bold;	
+	text-align: center;
+	animation-name: example;
+}
+section.sessao1-pecas p{
+	
+	padding: 20px 2%;
+	font-size: 20px;
+}
+section.sessao1-pecas pecas-galeria{
+	width: 80%;
+	height: 350px;
+	margin: 0 auto;
+	display: flex;
+	background-color: rgb(20,20,20); 
+}
+section.sessao1-pecas .pecas-galeria .pecas-img{
+	float: left;
+	width: 33.3%;
+	height: 175px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border:2px solid black;
+	border-color: rgb(20,20,20);
+}
+/****SOBRE******/
+
+section.sessao1-sobre{
+	width: 100%;
+	height: auto;
+	background-color: rgb(20,20,20); 
+}
+section.sessao1-sobre .side-left-sobre{
+	float: left;
+	width: 50%;
+	padding: 25px 2%;
+	color: white;
+}
+section.sessao1-sobre .side-left-sobre h2{
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 25px;
+}
+section.sessao1-sobre .side-left-sobre p:first-of-type{
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 25px;
+}
+section.sessao1-sobre .side-right-sobre{
+	float: right;
+	width: 30%;
+	height: 400px;
+	margin-top: 10px;
+	margin-right: 2%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	
+}
+/*** MEDIA QUERY ***/
+@media screen and (max-width: 1000px){
+
+header{
+	width: 100%;
+	height: 170px;
+	overflow: hidden;
+}
+.logo-header{
+	float: none;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 440px;
+	height: 75px;
+	
+}
+.logo-header img{
+	width: 100%;
+	max-width: 440px;
+}
+/***********/
+nav.desktop{
+	float: none;
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 10px;
+	
+}
+section.sessao1-pecas {
+	height: 650px;
+}
+@media screen and (max-width: 830px){
+/********INDEX*********/
+header nav.desktop{
+	display: none;
+}
+header .mobile-icon{
+	display: block;
+}
+footer nav.desktop{
+	display: none;
+}
+.logo-header{
+	float: none;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 440px;
+	height: 75px;
+	cursor: pointer;
+	
+}
+.logo-header img{
+	width: 80%;
+	max-width: 440px;
+}
+section.bg-1 .h2-wraper{
+	width: 80%;
+	height: 230px;
+	position: relative;
+	margin: 0 auto;
+	top: 25%;
+	
+}
+section.bg-1 h2{
+	text-align: center;
+	margin:0 auto;
+	padding-top: 15%;
+	max-width: 90%;
+	font-size: 22px;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.copyright{
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding: 40px 2%;
+	
+
+}
+/******MECÂNICA*******/
+section.mecanica-galeria{
+	width: 100%;
+	height: 300px;
+	background: rgb(20,20,20);
+	
+}
+section.mecanica-galeria .mecanica-galeria-single{
+	width: 100%;
+	height: 100%;
+	padding: 15px 0;
+	background-color: rgb(20,20,20);
+}
+.mecanica-galeria-single .mecanica-img{
+	margin: 0 auto;
+	padding: 15px 2%;
+	width: 90%;
+	height: 80%;
+}
+.mecanica-galeria-single  h2{
+	padding: 0 2%;
+	margin-top: 15px;
+	font-size: 30px;
+}
+/******ELETRICA*******/
+.table-eletrica tr th{
+	display: block;
+	padding: 15px 2%;
+	width: 100%;
+	text-align: left;
+	padding-left: 20%;
+	margin: 0 auto;
+	font-size: 15px;
+}
+/***********PECAS************/
+section.sessao1-pecas {
+	height: 850px;
+}
+section.sessao1-pecas .pecas-galeria .pecas-img{
+	float: left;
+	width: 50%;
+	height: 175px;
+}
+/*******SOBRE*******/
+section.sessao1-sobre .side-left-sobre{
+	float: none;
+	width: 100%;
+	padding: 25px 2%;
+	color: white;
+}
+section.sessao1-sobre .side-left-sobre h2{
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 25px;
+}
+section.sessao1-sobre .side-left-sobre p:first-of-type{
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+section.sessao1-sobre .side-right-sobre{
+	float: none;
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+	margin-right: 2%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	
+}
+}
+@media screen and (max-width: 730px){
+	section.main-mosaico .mosaico-wraper{
+	display: block;
+}
+section.main-mosaico .mosaico-wraper .img{
+	float: none;
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+section.main-mosaico .text{
+	float: none;
+	width: 100%;
+	height: 200px;
+	color: white;
+	padding: 50px 20px;
+}
+section.contato{
+	width: 100%;
+	height: auto;
+	background-color: rgb(100,100,100);
+	border-bottom: 5px solid #196ce0;
+}
+section.contato .contact-side-left{
+	width: 100%;
+	height: 100%;
+	float: none;
+	border-right: none;
+	border-bottom: 2px solid white;
+}
+section.contato .contact-side-right{
+
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	float: none;
+	overflow: hidden;
+	
+}
